@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>goit-markup-hw-02</title>
-    <!--start google fonts declaration/czy deklarować po raz kolejny?-->
+    <!--start google fonts declaration-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!--finish google fonts declaration/czy deklarować po raz kolejny?-->
+    <!--finish google fonts declaration-->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -23,22 +23,19 @@
       >
       <nav>
         <ul class="navi">
-          <li><a  href="./index.html">Agencja</a></li>
-          <li><a  href="./portfolio.html">Portfolio</a></li>
-          <li><a  href="#Kontakt">Kontakt</a></li>
+          <li><a href="./index.html">Agencja</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="#Kontakt">Kontakt</a></li>
         </ul>
       </nav>
       <div class="header-contacts">
-        <a class="header-mail" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <a class="header-phone" href="tel:+48111111111">+48 111 111 111</a>
+        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a href="tel:+48111111111">+48 111 111 111</a>
       </div>
     </header>
     <main>
       <section>
         <h2>Nasze usługi</h2>
-        <!-- czy tutaj powinien być jakiś nagłówek...?-->
         <ul class="filter-button">
           <li><button type="button">Wszystkie</button></li>
           <li><button type="button">Strony</button></li>
@@ -46,7 +43,7 @@
           <li><button type="button">Dizajn</button></li>
           <li><button type="button">Marketing</button></li>
         </ul>
-        <ul>
+        <ul class="product">
           <li>
             <img
               src="images/technocrack.jpg"
@@ -55,9 +52,8 @@
               height="294"
             />
             <div>
-              <h3>Technocrack</h3>
-              <!-- czy może być h3 ?-->
-              <p>Strona internetowa</p>
+              <h3 class="prod-name">Technocrack</h3>
+              <p class="prod-type">Strona internetowa</p>
             </div>
           </li>
 
@@ -69,9 +65,8 @@
               height="294"
             />
             <div>
-              <h3>Grafika New Orlean vs Golden Star</h3>
-              <!-- czy może być h3 ?-->
-              <p>Dizajn</p>
+              <h3 class="prod-name">Grafika New Orlean vs Golden Star</h3>
+              <p class="prod-type">Dizajn</p>
             </div>
           </li>
           <li>
@@ -82,9 +77,8 @@
               height="294"
             />
             <div>
-              <h3>Restauracja Seafood</h3>
-              <!-- czy może być h3 ?-->
-              <p>Aplikacja</p>
+              <h3 class="prod-name">Restauracja Seafood</h3>
+              <p class="prod-type">Aplikacja</p>
             </div>
           </li>
           <li>
@@ -95,9 +89,8 @@
               height="294"
             />
             <div>
-              <h3>Projekt Prime</h3>
-              <!-- czy może być h3 ?-->
-              <p>Marketing</p>
+              <h3 class="prod-name">Projekt Prime</h3>
+              <p class="prod-type">Marketing</p>
             </div>
           </li>
           <li>
@@ -108,9 +101,8 @@
               height="294"
             />
             <div>
-              <h3>Projekt Boxes</h3>
-              <!-- czy może być h3 ?-->
-              <p>Aplikacja</p>
+              <h3 class="prod-name">Projekt Boxes</h3>
+              <p class="prod-type">Aplikacja</p>
             </div>
           </li>
           <li>
@@ -121,9 +113,8 @@
               height="294"
             />
             <div>
-              <h3>Inspiration has no Borders</h3>
-              <!-- czy może być h3 ?-->
-              <p>Strona internetowa</p>
+              <h3 class="prod-name">Inspiration has no Borders</h3>
+              <p class="prod-type">Strona internetowa</p>
             </div>
           </li>
           <li>
@@ -134,9 +125,8 @@
               height="294"
             />
             <div>
-              <h3>Magazyn Limited Edition</h3>
-              <!-- czy może być h3 ?-->
-              <p>Dizajn</p>
+              <h3 class="prod-name">Magazyn Limited Edition</h3>
+              <p class="prod-type">Dizajn</p>
             </div>
           </li>
           <li>
@@ -147,9 +137,8 @@
               height="294"
             />
             <div>
-              <h3>Projekt LAB</h3>
-              <!-- czy może być h3 ?-->
-              <p>Marketing</p>
+              <h3 class="prod-name">Projekt LAB</h3>
+              <p class="prod-type">Marketing</p>
             </div>
           </li>
           <li>
@@ -160,9 +149,8 @@
               height="294"
             />
             <div>
-              <h3>Growing Business</h3>
-              <!-- czy może być h3 ?-->
-              <p>Aplikacja</p>
+              <h3 class="prod-name">Growing Business</h3>
+              <p class="prod-type">Aplikacja</p>
             </div>
           </li>
         </ul>
@@ -173,10 +161,11 @@
         ><span class="logo-part1">Web</span
         ><span class="logo-part2">Studio</span></a
       >
-      <address class="contact-data">
+      <address>
         <ul>
           <li>
             <a
+              class="footer-contact"
               href="https://goo.gl/maps/LJF1vLMHz5jr4Uy99"
               target="blank"
               rel="noopener nofollow"
@@ -185,9 +174,17 @@
             >
           </li>
           <li>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a
+              class="footer-contact footer-mail"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
-          <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+          <li>
+            <a class="footer-contact footer-phone" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </li>
         </ul>
       </address>
     </footer>
