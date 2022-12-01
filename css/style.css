@@ -10,12 +10,31 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--base-text-color);
+  background-color: var(--just-white);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.list {
+  list-style: none;
 }
 .logo {
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
   line-height: 1.38;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
 .logo-part1 {
@@ -27,15 +46,19 @@ body {
 footer .logo-part2 {
   color: var(--just-white);
 }
-.navi a {
+.navi-link {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.17;
   text-decoration: none;
   color: var(--base-text-color);
+  letter-spacing: 0.02em;
 }
-.navi a:hover,
-.navi a:focus {
+.navi-link:hover,
+.navi-link:focus {
+  color: var(--my-blue);
+}
+.current-link {
   color: var(--my-blue);
 }
 .header-contacts a {
@@ -44,9 +67,12 @@ footer .logo-part2 {
   line-height: 1.17;
   text-decoration: none;
   color: var(--light-text-color);
+  letter-spacing: 0.02em;
 }
 .header-contacts :hover,
-.header-contacts :focus {
+.header-contacts :focus,
+.footer-contact:hover,
+.footer-contact:focus {
   color: var(--my-blue);
 }
 .main-header-section,
@@ -57,23 +83,29 @@ footer {
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
+  letter-spacing: 0.06em;
   color: var(--just-white);
 }
 .button-order {
   width: 200px;
   height: 50px;
-  background: var(--my-blue);
+  background-color: var(--my-blue);
   border-color: var(--my-blue);
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-size: 16px;
   font-weight: 700;
+  letter-spacing: 0.06em;
   color: var(--just-white);
+  cursor: pointer;
+  font-family: inherit;
 }
-/*all section headers are the same size*/
 .section-header {
   font-size: 36px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
+  /*letter-spacing: inherit;- dlaczego używając "inherit" nie otrzymujemy 
+  tego samego rezultatu skoro body ma letter-spacing = 0.03em*/
 }
 .advantage {
   font-size: 14px;
@@ -87,14 +119,16 @@ footer {
 .team-section {
   background-color: var(--light-back);
 }
-.employ-name {
+.employee-name {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
-.employ-position {
+.employee-position {
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--light-text-color);
 }
 .footer-contact {
@@ -112,10 +146,13 @@ footer {
 .filter-button button {
   font-size: 16px;
   font-weight: 500;
-  background: #f5f4fa;
+  color: var(--base-text-color);
+  background-color: #f5f4fa;
   border-color: #f5f4fa;
   border-radius: 4px;
   cursor: pointer;
+  font-family: inherit;
+  letter-spacing: 0.03em;
 }
 .filter-button button:hover,
 .filter-button button:focus {
@@ -127,9 +164,10 @@ footer {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 .prod-type {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.88;
   color: var(--light-text-color);
 }
